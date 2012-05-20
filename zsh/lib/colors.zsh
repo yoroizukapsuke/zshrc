@@ -1,0 +1,3 @@
+autoload colors
+colors
+
