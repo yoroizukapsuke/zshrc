@@ -38,6 +38,21 @@ alias su="su -l"
 
 alias afind='ack-grep -il'
 
+
+# git
+alias ga='git add'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias changelog='git log `git log -1 --format=%H -- CHANGELOG*`..; cat CHANGELOG*'
+
+
 case "${OSTYPE}" in
     freebsd*|darwin*)
         alias ls="ls -G -w"
@@ -46,4 +61,8 @@ case "${OSTYPE}" in
         alias ls="ls --color=auto"
         ;;
 esac
+
+
+
+
 
