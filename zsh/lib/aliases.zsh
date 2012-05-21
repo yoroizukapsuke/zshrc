@@ -26,10 +26,15 @@ alias d='dirs -v'
 
 alias where="command -v"
 alias j="jobs -l"
+
+
+# list
+alias l="ls"
 alias la="ls -a"
 alias lf="ls -F"
 alias ll="ls -l"
 alias sl=ls # often screw this up
+
 
 alias du="du -h"
 alias df="df -h"
